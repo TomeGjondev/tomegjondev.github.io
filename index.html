@@ -145,8 +145,62 @@
 </section>
 
 <section class="container5" id="Contact Me">
+    <div class="contact-wrapper">
+        <h2 class="contact-title">CONTACT</h2>
+        <p class="contact-subtitle">Feel free to reach out if you’d like to collaborate, have a question, or just want to say hello — I’d love to hear from you!</p>
 
+        <div class="social-icons">
+            <ul class="social-list">
+                <li> <a href="https://www.instagram.com/gjondev/" target="_blank"> <img src="iconmonstr-instagram-13-240.png" id="instafram" class="ikoni"></a></li>
+                <li> <a href="mailto:gjondevtome@gmail.com" target="_blank@stundents.finki.ukimtarget="_blank> <img src="email-and-mail-icon-black-free-png.webp" id="mail-icon" class="ikoni"></a></li>
+                <li> <a href="https://www.linkedin.com/in/tomegjondev" target="_blank"> <img src="iconmonstr-linkedin-5.svg" id="linked" class="ikoni"></a></li>
+            </ul>
+        </div>
+
+        <form action="https://formsubmit.co/gjondevtome@gmail.com " method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
 </section>
+
+<footer>
+    <p>© 2025 Your Name</p>
+</footer>
+
+<script>
+    let lastScroll = 0;
+    const nav = document.getElementById('navcontainer');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            nav.style.top = "0px";
+            return;
+        }
+
+        if (currentScroll > lastScroll) {
+            // Scrolling down
+            nav.style.top = "-70px"; // adjust to your nav height
+        } else {
+            // Scrolling up
+            nav.style.top = "0px";
+        }
+
+        lastScroll = currentScroll;
+    });
+    if (currentScroll > 0) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+
+</script>
+
 
 </body>
 </html>

@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Petit+Formal+Script&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100vw;
-    min-width: 1500px;
+    min-width: 1200px;
     overflow-x: auto;
 }
 details summary {
@@ -28,19 +31,31 @@ details ul {
     align-items: center;
     background-color: #99ccff;
     height: 60px; /* or whatever height fits your design */
-    padding: 0 20px;
+    padding: 8px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: top 0.3s;
 
+
+
+}
+#navcontainer.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #ime {
     /* no absolute positioning */
     color: white;
+    margin-left: 20px;
 }
 
 #nav ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
 }
 
@@ -64,6 +79,7 @@ details ul {
 
 .container{
     display: flex;
+    padding-top: 55px;
     justify-content: center;
     align-items: center;
 }
@@ -74,7 +90,7 @@ details ul {
     justify-content: center;
     align-items: center;
     background-color: #99ccff;
-    color: white;
+    color: black;
 }
 #jasslika{
     height: 300px;
@@ -112,7 +128,85 @@ h2{
     justify-content: center;
     align-items: center;
     background-color: #99ccff;
+    color: black;
+}
+.container5{
+    margin-bottom: 15px;
+}
+.contact-wrapper {
+    background-color: #99ccff;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-subtitle {
+    color: black;
+    margin-bottom: 1em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.social-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ikoni{
+    cursor: pointer;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    background-color: transparent;
+}
+.ikoni:hover{
+    background-color: #66b3ff;
+    border-radius: 50px;
+}
+
+#mail-icon{
+    height: 70px;
+    margin: 0px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background: none;
+    border: 2px solid white;
     color: white;
+    font-weight: bold;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 0.2em;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: black;
 }
 
 #proekti{
@@ -265,6 +359,21 @@ h2{
     font-size: 16px;
     font-weight: normal;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15px;
+    padding: 1rem;
+    background-color: #66b3ff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* #navcontainer{
     position: relative;
     display: flex;
