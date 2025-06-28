@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Petit+Formal+Script&display=swap');
 html {
     scroll-behavior: smooth;
+    font-family: 'inter', sans-serif;
 }
 body {
     margin: 0;
@@ -285,9 +286,9 @@ h2{
 .slider1
 {
     position: relative;
-    width: 18vh;
+    width: 20vh;
     height: 1vh;
-    background-color: #ffffff;
+    background-color: lightgray;
     margin: 1vh auto;
 }
 .slider1Inside
@@ -363,7 +364,7 @@ h2{
     padding: 4vh;
     position: relative;
     color: black;
-    font-family: 'Oswald', sans-serif;
+  /*  font-family: 'Oswald', sans-serif; */
     text-align: center;
     top: 38vh;
 }
