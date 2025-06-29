@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01ce91f2-6165-487f-b19c-4a039add7795" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/proba.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jasslika.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +51,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -71,7 +76,7 @@
       <workItem from="1749906232081" duration="213000" />
       <workItem from="1749906985411" duration="10169000" />
       <workItem from="1750376004347" duration="12268000" />
-      <workItem from="1751129961705" duration="1309000" />
+      <workItem from="1751129961705" duration="10880000" />
     </task>
     <servers />
   </component>

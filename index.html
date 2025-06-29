@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="cursor"></div>
+
 <header>
+
     <class id="navcontainer">
     <h2 id="ime">Tome Gjondev</h2>
         <nav id="nav">
@@ -23,15 +26,16 @@
     </class>
 </header>
 <section class="container">
-    <img src="jasslika.jpg" id="jasslika">
+    <img src="proba.jpg" id="jasslika">
     <p id="zaamene">
-        Hello!<br>
+        <span class="typewriter" style="font-size: 30px;">Hello!</span><br><br>
         My name is Tome Gjondev<br>
         I am a student at the Faculty of Computer Science and Engineering,<br>
         “Ss. Cyril and Methodius” University, Skopje and I'm studying software engineering and information systems.
     </p>
 </section>
 <section class="container2" id="education">
+    <div class="educationcontainer">
     <h2>Education</h2>
     <div class="projects">
         <h3>October 2024 - present Student - first year: Software Engineering and Information Systems </h3>
@@ -67,12 +71,13 @@
             </ul>
         </details>
     </div>
+    </div>
 </section>
 
 <section>
 <main class="content" id="skills">
     <article><div class="tretoContainer">
-        <h2><b>SKILLS:</b></h2>
+        <h2><b>Skills:</b></h2>
         <div class="projects">
             <div class="tretoLevo">
                 <ul>
@@ -93,7 +98,7 @@
             </div>
             <div class="tretoDesno">
                 <ul>
-                    <li>c++<br>
+                    <li>C++<br>
                         <div class="slider1"><div class="slider3Inside"></div></div>
                     </li>
 
@@ -113,14 +118,22 @@
         </div>
     </div>
     </article>
-    <h2 class="interesi">HOBBYS/INTERESTS:<br>
-        <span class="interesivnatre"> Coding, developing apps, practicing mindfulness,
-            yoga, enjoying nature, resting, reading scientific topics (especially astronomy),
-            and continuous self-improvement.</span>
-    </h2>
+
 </main>
     </section>
 
+<section class="interesi" id="My interests">
+
+    <h2>My Interests</h2>
+    <ul class="interesivnatre">
+        <li>💻 Coding & App Development</li>
+        <li>🧘‍♂️ Mindfulness & Yoga Practice</li>
+        <li>🌿 Enjoying Nature & Relaxation</li>
+        <li>📖 Reading Scientific Topics (especially Astronomy)</li>
+        <li>🚀 Continuous Self-Improvement</li>
+    </ul>
+
+</section>
 
 <section class="container3" id="Award">
 
@@ -196,11 +209,47 @@
 
         lastScroll = currentScroll;
     });
-    if (currentScroll > 0) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
+
+    /*kursor */
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+        // Move the cursor
+        cursor.style.top = (e.pageY - 10) + "px";
+        cursor.style.left = (e.pageX - 10) + "px";
+
+        // Get the element under the mouse
+        const target = e.target;
+
+        // Check if hovering a link or text element
+        if (
+            target.tagName === 'A' ||
+            target.closest('a') ||
+            hasVisibleText(target)
+        ) {
+            cursor.classList.add("blue-opacity");
+        } else {
+            cursor.classList.remove("blue-opacity");
+        }
+    });
+
+    document.addEventListener('click', e => {
+        cursor.classList.add("expand");
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500);
+    });
+
+
+    function hasVisibleText(element) {
+        for (const node of element.childNodes) {
+            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0) {
+                return true;
+            }
+        }
+        return false;
     }
+
 
 </script>
 
