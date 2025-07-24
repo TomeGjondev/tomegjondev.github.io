@@ -239,28 +239,18 @@ h2{
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    padding: 38px;
+    padding: 40px;
     width: 500px;
-    height: 150px;
+    height: 100px;
     /* min-width: fit-content; */
     align-content: center;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     border: white 1px dashed;
     border-radius: 30px;
     line-height: 35px;
     font-size: larger;
-}
-.imenaapp{
-    font-size: larger;
-    padding: 15px;
-    color: inherit;        /* Makes link use the surrounding text color */
-    text-decoration: none;
-}
-.imenaapp:hover{
-    border-radius: 20px;
-    background: orange;
 }
 
  #skills
